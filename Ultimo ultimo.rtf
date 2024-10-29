@@ -1,0 +1,127 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang2058{\fonttbl{\f0\fnil\fcharset0 Montserrat;}{\f1\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red192\green192\blue192;\red97\green97\blue97;\red0\green176\blue80;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\highlight1\ul\b\f0\fs30\lang11274 TP Final Desarrollo de Sistemas Orientados a Objetos\cf2\highlight0\ulnone\par
+\par
+
+\pard\sa200\sl240\slmult1\i\fs26 Integrantes del grupo:\b0\i0\fs24\par
+Jeimmy Ortiz, \par
+Fernandez Delfor Javier, \par
+Parra Luis.\par
+\b Consigna: \par
+\b0  Crear un programa para el manejo administrativo de un club de deportes     (3 deportes diferentes) teniendo en cuenta los siguientes aspectos:\par
+a) El sistema debe ser de acceso restringido s\'f3lo para algunas opciones             especiales (a considerar seg\'fan el grupo de trabajo).\par
+b) Cuotas sociales y deportivas, socios y no socios, invitados.\par
+c) Salida de comprobantes por pantalla.\par
+d) Rendici\'f3n de cuentas mensuales.\par
+
+\pard\sa200\sl276\slmult1\cf0\f1\fs22\lang10 En principio el menu de ingreso con usuario y contrase\'f1a con 3 accesos administrador usuario= admin contrase\'f1a 1234, contador usuario= contador contrase\'f1a=1234 recepcionista usuario= recep contrase\'f1a=1234. \par
+Permiso al sistema \par
+El administrador podra ver todo el menu completo\par
+El contador podra ver solo la rendicion de cuenta \par
+El recepcionista podra ver todo el menu menos rendicion de cuenta \par
+Al iniciar sesion mostrar para cada uno el menu al que tiene acceso \par
+Luego de el inicio de sesion el menu principal seria \par
+      Men\'fa Principal \par
+\cf3    1. Gestionar Socios\par
+   2. Gestionar Empleados\par
+   3. Gestionar Deportes\par
+   4. Gestionar Entradas a Toneos \par
+   5. Rendici\'f3n de Cuentas\par
+   6. Salir\par
+\cf0 En la cual en la opcion\par
+ \cf3 1 Gestionar Socio tendria otras opciones \cf0\par
+   1. Registrar Socio: DNI Socio(PK), Nombre, Apellido, Email, fecha de inscripcion. \par
+   2.Pagar cuota de socio: DNI Socio, Ingresar el monto de la cuota , Pagar cuota de socio  agregar a la Lista de Socios. Agregar el monto pagado a rendicion de cuentas e imprir un msj en pantalla cuota pagada exitosamente con todos los datos del Socio.\par
+   3. Dar de Baja Socio:Ingresa DNI Socio y Eliminar socio de la Lista de Socios. mostrar un msj que el socio se elimino de la lista correctamente. Si se ingresa un numero de socio incorrecto mostrar un msj que el socio no existe. Si pertenece a un Deporte asociado quitarlo de la lista del deporte.\par
+   4.Pagar cuota deportiva Socio: Ingresa DNI socio, ingresar el monto de la cuota Deportiva, Pagar cuota Depotiva. Agregar a la lista del deporte al cual esta inscripto. . Agregar el monto pagado a rendicion de cuentas e imprir un msj en pantalla cuota pagada exitosamente con todos los datos del Socio. Verificar antes Si es mayor al cupo maximo no agregar y mostrar un msj en pantalla indicando que no hay mas cupos y poner en lista de espera y agregar a lista de espera al No socio.\par
+\par
+    5. Lista de Socios: \par
+     a)Mostrar la lista de los Socios registrados  \par
+      b)Buscar socios \par
+      c)Modificar informacion de socio\par
+    6. Lista de Socios inscriptos a actividades deportivas: Mostrar la lista de los socios Inscriptos a actividades deportiva y a que deporte pertenece si esta inscripto a varios deportes mostrar a q deportes perteneces.\par
+    7. Invitado: Ingresa DNI socio,Nombre,apellido, DNI invitado ingresar monto a pagar, fecha de ingreso, mostrar un msj en pantalla que se ingreso el pago correctamente. Agregar el monto pagado a rendicion de cuentas.\par
+\par
+    8.Volver al Men\'fa Principal: Volver al menu principal \par
+en todos los casos agregar excepciones por si el usuario pone datos equivocados.\par
+\par
+\cf3 2. Gestionar Empleados:\cf0\par
+1. Agregar profesor: Nombre, Apellido , DNI, Deporte,fecha de ingreso, agregar a lista de profesor\par
+2. Eliminar profesor: DNI, eliminar de la lista de profesor.\par
+3. Organizar Deporte: deporte, dias, horarios profesor, cupos maximo.\par
+4. Lista Deporte:mostrar Organizar deporte y el profesor asociado al deporte.\par
+\cf3 3. Gestionar Deportes  \cf0\par
+1. Deportes: Futbol, Tenis, Natacion.\par
+a) Lista Futbol: mostrar Organizar Deporte solo Futbol, agregar los Socios y No socios asociados a futbol \par
+b) Lista Tenis: mostrar Organizar Deporte solo Tenis\par
+c) Lista Natacion: mostrar Organizar Deporte solo Natacion\par
+2. No Socios: Nombre,apellido,DNI,fecha de ingreso\par
+3. Pagar cuota Deportiva No Socio: DNI no socio, Monto cuota deportiva,  agregar a lista del deporte al que pertenece (Futbol, Tenis, Natacion). Verificar antes Si es mayor al cupo maximo no agregar y mostrar un msj en pantalla indicando que no hay mas cupos y poner en lista de espera y agregar a lista de espera al No socio. Agregar el pago a rendicion de cuenta.\par
+4. Lista en espera: Mostrar una lista con los datos del Socio o No Socio en espera.\par
+5. Dar de Baja No Socio: DNI No Socio,Quitar de la Lista del deporte al que pertenece.\par
+\par
+\cf3 4. Gestionar Entradas a Toneos:\par
+\cf0 1. Deporte: Futbol, Tenis, Natacion\par
+2. Entrada Futbol Socio: DNI Socio Fecha de ingreso agregar Socio  a Ingresantes al Estadio Futbol\par
+3 Entrada Futbol No Socio: Nombre, Apellido, DNI, Fecha de ingreso, Pagar monto de entrada, y agregar pago a rendicion de cuenta. agregar No Socio  a Ingresantes al Estadio Futbol. Mostrar un ticket en pantalla con los datos \par
+2. Entrada Tenis Socio: DNI, fecha de ingreso, Socio agregar Socio a Ingresantes al Estadio Tenis\par
+3 Entrada Tenis No Socio: Nombre, Apellido, DNI, fecha de ingreso, Pagar monto de entrada, y agregar pago a rendicion de cuenta. Agregar No socio a Ingresantes al Estadio Tenis\par
+2. Entrada NatacionSocio:DNI Socio, fecha de ingreso, gregar Socio a Ingresantes al Estadio Natacion\par
+3 Entrada NatacionNO Socio:Nombre, Apellido, DNI, fecha de ingreso,  Pagar monto de entrada, y agregar pago a rendicion de cuenta. Agregar a No Socio a Ingresantes al Estadio Natacion\par
+Ingresantes al Estadio Futbol: Mostrar Ingresantes\par
+Ingresantes al Estadio Tenis:  Mostrar Ingresantes\par
+Ingresantes al Estadio Natacion: Mostrar Ingresantes\par
+\par
+\cf3 5. Rendici\'f3n de Cuentas:\par
+\cf0 Mostrar rendicion de cuentas todos los pagos que se hicieron detallarlos aca de donde provino con las fechas y los datos.\par
+\cf3 6. Salir:\par
+\cf0 Salir del sistema mostrar un print q se salio del sistema.\par
+\par
+    Men\'fa Principal \par
+1. Gestion de Socios \par
+2. Gestion de Profesores \par
+3. Gestionar Deportes \par
+4. Gestionar Entradas a Toneos \par
+5. Rendici\'f3n de Cuentas\par
+ 6. Salir \par
+1 Gestion de Socios  \par
+a). Registrar Socio: DNI Socio(PK), Nombre, Apellido, Email, fecha de inscripcion. \par
+b).Pagar Cuota de Socio: DNI Socio, Ingresar el monto de la Cuota , Pagar Cuota de Socio agregar a la Lista de Socios. Agregar el monto pagado a Rendici\'f3n de cuentas e imprimir un mensaje en pantalla cuota pagada exitosamente con todos los datos del Socio. \par
+c). Dar de Baja Socio: Ingresa DNI Socio y Eliminar Socio de la Lista de Socios. mostrar un msj que el socio se elimina de la lista correctamente. \par
+d).Pagar cuota Deportiva Socio: Ingresa DNI Socio, ingresar el monto de la Cuota Deportiva, Pagar Cuota Deportiva. Agregar a la lista del Deporte al cual se asocia (Futbol, Tenis, Natacion) agregar el monto pagado a Rendici\'f3n de Cuentas e imprimir un msj en pantalla Cuota pagada exitosamente con todos los datos del Socio. \par
+e). Lista de Socios: \par
+       1)Mostrar la lista de los Socios registrados \par
+       2)Buscar socios \par
+       3)Modificar informaci\'f3n de socio \par
+g). Invitado: Ingresa DNI del Socio, Nombre, apellido, DNI invitado ingresar monto a pagar, fecha de ingreso, mostrar un msj en pantalla que se ingreso el pago correctamente. Agregar el monto pagado a Rendicion de Cuentas. \par
+h).Volver al Men\'fa Principal: Volver al men\'fa principal \par
+2. Gestion de Profesores : \par
+a). Agregar Profesor: Nombre, Apellido, DNI PK, Fecha de ingreso, Deporte ,Dias y Horarios, agregar a lista de Profesores.   \par
+b). Eliminar profesor: DNI, eliminar de la lista de Profesores. \par
+c) Listar Profesores: mostrar Profesor agregados Nombre,  Apellido,  Deporte, Dias y Horarios (asociar el profesor al deporte que se asocia (Futbol, Tenis, Natacion) \par
+3. Gestionar Deportes: \par
+Mostrar y predefinir solo  estos deportes : Futbol, \u8203?\u8203?Tenis, Natacion. \par
+a) Lista Futbol: agregar y mostrar primero el Profesor asociado a Futbol con sus dias y horarios , \u8203?\u8203?agregar los Socios y No socios asociados a Futbol \par
+b) Lista Tenis: agregar y mostrar primero el profesor asociado a Tenis con sus dias y horarios , \u8203?\u8203?agregar los Socios y No socios asociados a Tenis \par
+c) Lista Natacion: agregar y mostrar primero el profesor asociado a Natacion con sus dias y horarios, \u8203?\u8203?agregar los Socios y No socios asociados a Natacion \par
+d. No Socio: Nombre, Apellido, DNI , Fecha de ingreso \par
+e. Pagar Cuota Deportiva No Socio: DNI No Socio, Monto Cuota Deportiva, agregar a lista del Deporte al que se asocia (Futbol, \u8203?\u8203?Tenis, Natacion). Agregar el pago a Rendicion de Cuenta. mostrar pago agregado correctamente.\par
+f. Dar de Baja No Socio: DNI No Socio,Quitar de la Lista del Deporte al que esta asociado(Futbol, Tenis, Natacion). \par
+g. Gestionar Entradas a Toneos:\par
+ 1. Deporte: Futbol, \u8203?\u8203?Tenis, Natacion \par
+2. Entrada Futbol Socio: DNI Socio Fecha de ingreso agregar Socio a Ingresantes al Estadio Futbol \par
+3 Entrada Futbol No Socio: Nombre, Apellido, DNI, Fecha de ingreso,Pagar monto de entrada, y agregar pago a Rendicion de Cuenta. agregar No Socio a Ingresantes al Estadio Futbol. Mostrar un mensaje Pago realizado con exito en pantalla con los datos\par
+ 2. Entrada Tenis Socio: DNI, fecha de ingreso, Socio agregar Socio a Ingresantes al Estadio Tenis \par
+3 Entrada Tenis No Socio: Nombre, Apellido, DNI, fecha de ingreso, Pagar monto de entrada, y agregar pago a Rendici\'f3n de Cuenta. Agregar No Socio a Ingresantes al Estadio Tenis \par
+2. Entrada Natacion Socio:DNI Socio, fecha de ingreso, gregar Socio a Ingresantes al Estadio Natacion \par
+3 Entrada Natacion NO Socio:Nombre, Apellido, DNI, fecha de ingreso, Pagar monto de entrada, y agregar pago una Rendici\'f3n de Cuenta. Agregar a No Socio a Ingresantes al Estadio Natacion \par
+a).Ingresantes al Estadio Futbol: \par
+b). Mostrar Ingresantes Ingresantes al Estadio Tenis: \par
+c).Mostrar Ingresantes Ingresantes al Estadio Natacion:  \par
+5. Ver Rendici\'f3n de Cuentas: Mostrar rendicion de cuentas todos los agregar pago a Rendicion de Cuentas detallarlos aca de donde provino con las fechas y los datos. \par
+6. Salir: Salir del sistema\par
+\par
+\par
+}
+ 
