@@ -1,0 +1,11 @@
+Descripción del Código
+Clase ClubDeportivoApp: Representa la aplicación principal, donde se inicializan los módulos y se crea la interfaz gráfica.
+Método create_widgets: Crea los botones para las distintas funcionalidades de la aplicación (gestión de usuarios, facturas y reportes).
+Método add_user: Solicita información al usuario y agrega un nuevo usuario a la base de datos.
+Método view_users: Muestra una lista de todos los usuarios registrados.
+Método generate_invoice: Solicita el ID del usuario y el monto, y genera una nueva factura.
+Método view_invoices: Muestra todas las facturas de un usuario específico.
+Método generate_monthly_report: Genera un reporte mensual y lo guarda en un archivo TXT.
+Método on_closing: Cierra las conexiones de la base de datos al cerrar la aplicación.
+Ejecución de la Aplicación
+Para ejecutar la aplicación, asegúrate de que los módulos user_management.py, invoice_management.py y reporting.py estén en el mismo directorio que main.py. Luego, simplemente ejecuta el archivo main.py en tu entorno de Python.
